@@ -1,0 +1,30 @@
+{
+    "name": "newpkg",
+    "version": "0.0.0",
+    "module": "src/index.ts",
+    "type": "module",
+    "bin": "npminit",
+    "scripts": {
+        "dev": "rslib build  --config ./build/rslib.config.ts --watch",
+        "build": "rslib build --config ./build/rslib.config.ts",
+        "build:bundler": "bun run build/build.bun.ts",
+        "publish": "bun ./build/check-npm-user.ts && npm publish",
+        "check-git-user": "bun ./build/check-git-user.ts"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@rslib/core": "^0.19.3",
+        "@types/bun": "latest",
+        "@types/node": "^24",
+        "vitest": "^4",
+        "chalk": "5.6.2",
+        "tinybench": "6.0.0"
+    },
+    "peerDependencies": {
+        "typescript": "^5"
+    },
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/"
+    },
+    "license": "ISC"
+}
