@@ -8,6 +8,7 @@
         "dev": "rslib build  --config ./build/rslib.config.ts --watch",
         "build": "rslib build --config ./build/rslib.config.ts",
         "build:bundler": "bun run build/build.bun.ts",
+        "test": "vitest",
         "publish": "bun ./build/check-npm-user.ts && npm publish",
         "check-git-user": "bun ./build/check-git-user.ts"
     },
