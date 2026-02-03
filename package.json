@@ -1,6 +1,6 @@
 {
-    "name": "newpkg",
-    "version": "0.0.0",
+    "name": "newpkg0",
+    "version": "0.0.6",
     "module": "src/index.ts",
     "type": "module",
     "bin": "npminit",
