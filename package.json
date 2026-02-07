@@ -1,7 +1,7 @@
 {
     "name": "newpkg0",
     "version": "0.0.6",
-    "module": "src/index.ts",
+    "main": "src/index.ts",
     "type": "module",
     "bin": "npminit",
     "scripts": {
