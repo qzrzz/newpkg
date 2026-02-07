@@ -12,5 +12,5 @@
         "allowImportingTsExtensions": true,
         "allowJs": true
     },
-    "include": ["src", "build", "test"]
+    "include": ["src"]
 }
