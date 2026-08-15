@@ -1,37 +1,37 @@
 {
-    "name": "newpkg0",
-    "version": "0.0.6",
-    "main": "src/index.ts",
-    "type": "module",
-    "bin": "npminit",
-    "scripts": {
-        "dev": "rslib build  --config ./build/rslib.config.ts --watch",
-        "build": "rslib build --config ./build/rslib.config.ts",
-        "build:bundler": "bun run build/build.bun.ts",
-        "test": "vitest",
-        "build-publish": "npm run build && bun ./build/check-npm-user.ts && npm publish",
-        "check-git-user": "bun ./build/check-git-user.ts"
-    },
-    "dependencies": {},
-    "devDependencies": {
-        "@rslib/core": "^0.19.3",
-        "@types/bun": "latest",
-        "@types/node": "^24",
-        "vitest": "^4",
-        "chalk": "5.6.2",
-        "tinybench": "6.0.0"
-    },
-    "files": [
-        "dist",
-        "src",
-        "README.md",
-        "tsconfig.json"
-    ],
-    "peerDependencies": {
-        "typescript": "^5"
-    },
-    "publishConfig": {
-        "registry": "https://registry.npmjs.org/"
-    },
-    "license": "ISC"
+  "name": "newpkg0",
+  "version": "0.0.6",
+  "license": "ISC",
+  "bin": "npminit",
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "tsconfig.json"
+  ],
+  "type": "module",
+  "main": "src/index.ts",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "dev": "rslib build  --config ./build/rslib.config.ts --watch",
+    "build": "rslib build --config ./build/rslib.config.ts",
+    "build:bundler": "bun run build/build.bun.ts",
+    "test": "vitest",
+    "build-publish": "npm run build && bun ./build/check-npm-user.ts && npm publish",
+    "check-git-user": "bun ./build/check-git-user.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@rslib/core": "^0.23.3",
+    "@types/bun": "latest",
+    "@types/node": "^26",
+    "chalk": "6.0.0",
+    "tinybench": "6.1.3",
+    "vitest": "^4"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  }
 }
