@@ -7,6 +7,8 @@ node_modules
 # output
 out
 dist
+dist-*
+cache
 *.tgz
 
 # code coverage
@@ -20,15 +22,14 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
 # dotenv environment variable files
 .env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
+.env*
+ 
 
 # caches
 .eslintcache
 .cache
 *.tsbuildinfo
+.wrangler/tmp
 
 # IntelliJ based IDEs
 .idea
